@@ -1,4 +1,4 @@
-const api = "http://www.omdbapi.com/?i=tt3896198&apikey=b4c83c1e";
+const api = "http://www.omdbapi.com/?i=tt3896198&apikey=be41af31"
 const searchbox = document.querySelector(".Search-box");
 // searchbox.addEventListener('keypress',setQuery);
 const button = document.querySelector(".button");
@@ -14,6 +14,7 @@ function getResults(q) {
         return movie.json();
     }).then((movie)=>{
         // console.log(movie.Search.length);
+        
             var content = document.querySelector("#content"); 
             
             var box = content.lastElementChild;  
